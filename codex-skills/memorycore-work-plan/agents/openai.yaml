@@ -1,0 +1,4 @@
+interface:
+  display_name: "MemoryCore Work Plan"
+  short_description: "Plan and execute founder-grade work"
+  default_prompt: "Use $memorycore-work-plan to turn a rough goal into a clear execution plan and track progress in MemoryCore."

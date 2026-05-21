@@ -1,0 +1,4 @@
+interface:
+  display_name: "Save MemoryCore"
+  short_description: "Persist durable MemoryCore updates"
+  default_prompt: "Use $save-memorycore to save durable preferences, decisions, and session context into MemoryCore files."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "MemoryCore Auto Commit"
+  short_description: "Commit MemoryCore changes cleanly"
+  default_prompt: "Use $memorycore-auto-commit to review repository changes and create a structured git commit."

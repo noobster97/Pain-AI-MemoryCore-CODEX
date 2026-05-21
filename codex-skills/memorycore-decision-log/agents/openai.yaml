@@ -1,0 +1,4 @@
+interface:
+  display_name: "MemoryCore Decision Log"
+  short_description: "Record durable decisions and rationale"
+  default_prompt: "Use $memorycore-decision-log to capture an important decision, rationale, and consequences in MemoryCore."

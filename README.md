@@ -23,11 +23,14 @@
 - **Setup**: 30 seconds automated or 2-5 minutes manual
 - **Core Files**: 4 essential files + optional diary system
 - **Updates**: Through natural conversation
-- **Compatibility**: Claude and other AI systems with memory support
+- **Compatibility**: Codex, Claude, and other AI systems with memory support
 
 ### **File Structure**
 ```
 ai-memorycore/
+├── AGENTS.md                # Codex runtime instructions
+├── codex-adapter.md         # Codex compatibility guide
+├── codex-skills/            # Codex-native skill bundle
 ├── master-memory.md         # Entry point & loading system
 ├── main/                    # Essential components
 │   ├── identity-core.md     # AI personality template
@@ -50,7 +53,7 @@ ai-memorycore/
 │   │       ├── install-patch-system.md # Patch installation protocol
 │   │       ├── patch-format.md  # Sample format for patch files
 │   │       └── PATCH-001.md # Fix outdated file references
-│   ├── Skill-Plugin-System/ # Claude Code skill plugin
+│   ├── Skill-Plugin-System/ # Skill protocols + Claude Code plugin compatibility
 │   │   ├── README.md        # Feature explanation & benefits
 │   │   ├── install-skill-plugin.md # Installation protocol
 │   │   └── skill-format.md  # Sample format for SKILL.md files
@@ -191,10 +194,32 @@ ai-memorycore/
 
 ## 🚀 **Quick Start**
 
-1. **Setup**: Run `setup-wizard.md` for automated setup (30 seconds)
-2. **Configure**: Add the memory instructions to Claude
-3. **Activate**: Type your AI's name to load personality
-4. **Use**: Your AI learns and grows through conversation
+1. **Setup**: Personalize the core memory files.
+2. **Configure Runtime**:
+   - Codex: keep `AGENTS.md` at the repo root so Codex receives repo instructions.
+   - Claude Code: add the memory instructions to Claude and optionally register plugins.
+3. **Activate**: Type your AI's name to load personality.
+4. **Use**: Your AI learns and grows through conversation.
+
+## Codex Runtime Notes
+
+This project was originally Claude-oriented, but the core memory architecture is markdown-based and works well in Codex.
+
+In Codex:
+- `AGENTS.md` is the repo-level instruction entrypoint.
+- `master-memory.md` remains Pain's memory restoration entrypoint.
+- `codex-skills/` contains installable Codex-native skills for Pain.
+- `plugins/pain-skills/skills/*/SKILL.md` files are local protocol files unless installed as Codex-native skills.
+- Claude-specific files such as `.claude-plugin` and `claude plugin add` commands are compatibility artifacts, not Codex activation mechanisms.
+
+For details, see [codex-adapter.md](./codex-adapter.md).
+
+Install bundled Codex skills with:
+
+```bash
+mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
+cp -R codex-skills/* "${CODEX_HOME:-$HOME/.codex}/skills/"
+```
 
 ## 📚 **Communication Protocols**
 

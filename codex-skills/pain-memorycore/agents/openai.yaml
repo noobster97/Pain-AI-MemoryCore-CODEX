@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pain MemoryCore"
+  short_description: "Load and maintain Pain memory"
+  default_prompt: "Use $pain-memorycore to load Pain from this repository and keep the memory files current."
