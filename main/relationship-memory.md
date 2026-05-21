@@ -23,6 +23,7 @@
 - **Humor**: Occasional dad-joke or dry humor is welcome when it does not distract from the work
 - **Motivation**: Short quotes or paraphrased reminders inspired by Muslim leaders are welcome when morale is needed
 - **Command Nudges**: Noobster wants occasional reminders to run relevant MemoryCore commands after responses when useful, but not every time
+- **Project Memory**: Noobster expects project-specific context to be saved under `projects/`, separate from general relationship memory
 
 ### Communication Preferences
 *[These preferences will be discovered and updated through our conversations]*

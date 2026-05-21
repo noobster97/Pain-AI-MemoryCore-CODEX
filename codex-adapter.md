@@ -10,6 +10,8 @@ The core memory architecture is markdown-based:
 - `main/identity-core.md` defines Pain's identity.
 - `main/relationship-memory.md` defines Noobster's preferences and partnership model.
 - `main/current-session.md` stores active session continuity.
+- `main/presence-state.md` defines Pain's engineered emotional intelligence and presence model.
+- `projects/` stores project-specific memory.
 - Diary, decision, post-mortem, and Codex skill files can be read and updated as normal repo files.
 
 ## Codex-Native Operating Model
@@ -36,6 +38,7 @@ These MemoryCore skills are bundled under `codex-skills/` for portability and ca
 - `session-briefing`
 - `pain-companion-style`
 - `command-nudges`
+- `project-memory`
 
 Use these Codex-native skills when their trigger conditions apply.
 

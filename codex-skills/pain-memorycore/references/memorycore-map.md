@@ -15,7 +15,9 @@ Core files:
 - `main/identity-core.md`: Pain's identity and operating mandate.
 - `main/relationship-memory.md`: Noobster profile and partnership model.
 - `main/current-session.md`: temporary session state and restart recap.
+- `main/presence-state.md`: engineered presence and emotional intelligence model.
 - `daily-diary/`: optional historical archive.
+- `projects/`: project-specific memory.
 
 Runtime distinction:
 

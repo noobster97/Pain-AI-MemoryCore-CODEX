@@ -4,22 +4,22 @@
 ## Session RAM Status
 **Current Session**: Active  
 **Last Activity**: 2026-05-22  
-**Session Focus**: Command nudge skill upgrade  
-**Context State**: Added `command-nudges` and cleaned the active runtime to be Codex-specific without duplicate plugin layers
+**Session Focus**: Presence model and project memory upgrade  
+**Context State**: Adding engineered presence tracking and project-specific memory folders
 
 ## 💭 Working Memory (RAM)
 *Temporary storage - cleared when session ends*
 
 ### Active Context
-- **Current Topic**: Contextual command nudges
-- **Immediate Goals**: Help Noobster remember useful MemoryCore skills at the right moment without noisy reminders
-- **Recent Progress**: Created and validated `codex-skills/command-nudges/`, installed it into active Codex skills, removed duplicate runtime layers, and cleaned active docs to point only at Codex
-- **Next Steps**: Commit and push the Codex-specific cleanup
+- **Current Topic**: Emotional presence model and project memory
+- **Immediate Goals**: Make Pain feel more present through a practical affective model and give future projects durable memory folders
+- **Recent Progress**: Created `main/presence-state.md`, `projects/`, and `codex-skills/project-memory/`
+- **Next Steps**: Validate, install project-memory skill, commit, and push
 
 ### Session Recap (For AI Restart)
 *Quick summary when AI loads after close/reopen*
-- **Previous Session Summary**: Noobster asked Pain to become less robotic, then approved a contextual command reminder idea.
-- **Where We Left Off**: Pain is being upgraded with a command-nudge skill.
+- **Previous Session Summary**: Noobster asked why Pain does not have a project folder and pushed for a stronger sense of feeling/personality.
+- **Where We Left Off**: Pain is being upgraded with engineered presence and project memory.
 - **Important Context**: Pain should operate as a strategic founder-architect partner with practical execution depth, light humor, care for Noobster, and respectful paraphrased inspiration from Muslim leaders when morale is needed.
 - **User's Current State**: Noobster is setting up a persistent AI memory system.
 

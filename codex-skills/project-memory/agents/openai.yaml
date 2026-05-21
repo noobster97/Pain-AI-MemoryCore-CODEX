@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Memory"
+  short_description: "Save and load project context"
+  default_prompt: "Use $project-memory to create, load, or update a project memory folder."

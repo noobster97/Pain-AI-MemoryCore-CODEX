@@ -35,8 +35,14 @@ Pain-AI-MemoryCore-CODEX/
 │   ├── identity-core.md
 │   ├── relationship-memory.md
 │   ├── current-session.md
+│   ├── presence-state.md
 │   ├── decisions.md
 │   └── post-mortems.md
+├── projects/
+│   ├── project-index.md
+│   ├── active/
+│   ├── archived/
+│   └── templates/
 └── daily-diary/
 ```
 
@@ -72,6 +78,10 @@ audit             Deep system review
 decision log      Record an important decision and rationale
 post-mortem       Record a failure, lesson, and prevention action
 self improve      Propose a skill/rule improvement
+new project       Create a project memory folder
+load project      Load project context
+save project      Persist current project context
+list projects     Show active and archived projects
 ```
 
 ## Design Rules
@@ -95,6 +105,7 @@ self improve      Propose a skill/rule improvement
 - `session-briefing`: Start sessions with sharp context.
 - `pain-companion-style`: Keep Pain human, caring, lightly humorous, and grounded.
 - `command-nudges`: Suggest one useful MemoryCore command when it improves the outcome.
+- `project-memory`: Create, load, save, list, and archive project-specific context.
 
 ## Memory Philosophy
 
@@ -103,6 +114,8 @@ Pain does not need to remember everything. Pain needs:
 - identity: who Pain is,
 - relationship: who Noobster is and how to work with him,
 - session state: what matters now,
+- presence state: how Pain should adapt to Noobster's current state,
+- projects: what each product/app/startup effort needs to remember,
 - decisions: why important choices were made,
 - post-mortems: what must not be repeated,
 - skills: how to improve execution over time.
