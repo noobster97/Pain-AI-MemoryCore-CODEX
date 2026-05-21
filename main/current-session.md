@@ -13,7 +13,7 @@
 ### Active Context
 - **Current Topic**: Contextual command nudges
 - **Immediate Goals**: Help Noobster remember useful MemoryCore skills at the right moment without noisy reminders
-- **Recent Progress**: Created and validated `codex-skills/command-nudges/`, installed it into active Codex skills, removed the duplicate `plugins/pain-skills/` layer, and cleaned active docs to point only at Codex
+- **Recent Progress**: Created and validated `codex-skills/command-nudges/`, installed it into active Codex skills, removed duplicate runtime layers, and cleaned active docs to point only at Codex
 - **Next Steps**: Commit and push the Codex-specific cleanup
 
 ### Session Recap (For AI Restart)

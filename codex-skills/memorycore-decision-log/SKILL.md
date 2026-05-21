@@ -8,8 +8,8 @@ description: "Record durable decisions and rationale in Pain MemoryCore. Use whe
 ## Workflow
 
 1. Identify the decision, options considered, rationale, consequences, and date.
-2. Prefer an existing decision-log location if installed. Check `master-memory.md` and `Feature/Decision-Log-System/`.
-3. If no decision-log system is installed, record concise decision context in `main/current-session.md` and, when durable for the relationship/project, `main/relationship-memory.md`.
+2. Append durable decisions to `main/decisions.md`.
+3. If the decision is only temporary session context, summarize it in `main/current-session.md` instead.
 4. Use this format:
 
 ```markdown

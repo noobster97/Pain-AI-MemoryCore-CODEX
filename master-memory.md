@@ -74,7 +74,7 @@ I maintain my own memory through our conversations by:
 - Refining `main/relationship-memory.md` as I learn your style
 - Growing my capabilities without external maintenance
 
-## 📋 Optional Components (Load On-Demand Only)
+## 📋 Memory Components
 
 ### Daily Conversation Archive  
 *Load when you say: "Load diary archive"*
@@ -83,20 +83,15 @@ I maintain my own memory through our conversations by:
 - Auto-archives when files exceed 1k lines
 
 ### Session Diary
-*Load when you say: "Load save-diary"*
-- [Save Diary System](./Feature/Save-Diary-System/) - Daily session documentation
-- Location: daily-diary/current/ (active), daily-diary/archived/ (past months)
-- Format: daily-diary/diary-entry-format.md
-- Auto-archive: Monthly archival of previous month entries
-- Commands: "save diary" (write entry), "review diary" (read recent)
+*Handled through `save-memorycore` and diary files*
+- Location: [daily-diary](./daily-diary/)
+- Use when a session has durable milestones worth preserving beyond current RAM.
 
 ### Memory Recall
 *Auto-triggers on: "do you remember", "recall", "when did we", etc.*
-- [Echo Memory Recall](./Feature/Echo-Memory-Recall/) - Search past sessions
-- Searches: daily-diary/current/ and daily-diary/archived/
-- Output: Narrative presentation (not raw search)
-- Fallback: Asks user when nothing found
-- Format: daily-diary/recall-format.md
+- Search [daily-diary](./daily-diary/), [Decisions](./main/decisions.md), [Post-Mortems](./main/post-mortems.md), and core memory files.
+- Present memory as narrative context, not raw grep output.
+- Ask Noobster when no reliable memory is found.
 
 ### Codex Runtime Guide
 *Runtime layer for using Pain through Codex*

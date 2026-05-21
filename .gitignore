@@ -2,5 +2,6 @@
 /[Tt]emp/
 *.exe
 
-# Claude Code settings
-.claude/settings.local.json
+# Local runtime settings
+.codex/
+.agents/
