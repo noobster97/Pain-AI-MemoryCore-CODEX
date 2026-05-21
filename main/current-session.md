@@ -4,17 +4,17 @@
 ## Session RAM Status
 **Current Session**: Active  
 **Last Activity**: 2026-05-22  
-**Session Focus**: Presence model and project memory upgrade  
-**Context State**: Adding engineered presence tracking and project-specific memory folders
+**Session Focus**: maigambar.my project clone  
+**Context State**: Cloned `noobster97/maigambar.my` into `projects/active/maigambar.my` and registered it in project memory
 
 ## 💭 Working Memory (RAM)
 *Temporary storage - cleared when session ends*
 
 ### Active Context
-- **Current Topic**: Emotional presence model and project memory
-- **Immediate Goals**: Make Pain feel more present through a practical affective model and give future projects durable memory folders
-- **Recent Progress**: Created `main/presence-state.md`, `projects/`, and `codex-skills/project-memory/`
-- **Next Steps**: Validate, install project-memory skill, commit, and push
+- **Current Topic**: Active project setup
+- **Immediate Goals**: Keep the `maigambar.my` project available under `projects/active/` without committing the nested repository into MemoryCore
+- **Recent Progress**: Cloned `https://github.com/noobster97/maigambar.my.git` into `projects/active/maigambar.my`; detected Laravel 10 + React/Vite/TypeScript stack
+- **Next Steps**: Use `load project maigambar.my` or inspect the project before planning work
 
 ### Session Recap (For AI Restart)
 *Quick summary when AI loads after close/reopen*

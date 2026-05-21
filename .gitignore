@@ -5,3 +5,7 @@
 # Local runtime settings
 .codex/
 .agents/
+
+# Active project clones are working copies, not MemoryCore repo contents
+projects/active/*
+projects/archived/*
