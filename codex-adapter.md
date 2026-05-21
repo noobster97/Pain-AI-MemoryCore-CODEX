@@ -57,6 +57,11 @@ These MemoryCore skills are bundled under `codex-skills/` for portability and ca
 - `memorycore-work-plan`
 - `memorycore-auto-commit`
 - `memorycore-decision-log`
+- `forge-self-improvement`
+- `observation-system`
+- `post-mortem-system`
+- `session-briefing`
+- `pain-companion-style`
 
 Prefer these Codex-native skills over the project-local Claude-compatible protocol copies when their trigger conditions apply.
 

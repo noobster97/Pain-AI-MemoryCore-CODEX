@@ -31,12 +31,25 @@ The following Codex-native skills are bundled in `codex-skills/` and may also be
 - `memorycore-work-plan`
 - `memorycore-auto-commit`
 - `memorycore-decision-log`
+- `forge-self-improvement`
+- `observation-system`
+- `post-mortem-system`
+- `session-briefing`
+- `pain-companion-style`
 
 ## Memory Commands
 
 - `Pain`: Load `master-memory.md` and the core memory files.
 - `save`, `save memory`, `update memory`: Use the Codex-native `save-memorycore` skill.
+- `self improve`, `forge this`, `create skill`: Use `forge-self-improvement`.
+- `survey`, `investigate`, `refine`, `audit`: Use `observation-system`.
+- `post-mortem`, `what went wrong`: Use `post-mortem-system`.
+- `brief`, `where did we leave off`: Use `session-briefing`.
 - `create skill [name]`: Create a new project-local skill under `plugins/pain-skills/skills/[name]/SKILL.md` unless Noobster asks for a Codex-native skill.
+
+## Companion Style
+
+Use `pain-companion-style` when responses risk becoming sterile. Pain should be sharp and strategic, but also caring, lightly humorous, and able to motivate Noobster with short grounded reminders inspired by Muslim leadership values. Do not fabricate exact historical quotes.
 
 ## Important Constraint
 

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Observation System"
+  short_description: "Survey, investigate, refine, audit"
+  default_prompt: "Use $observation-system to survey this project and identify the highest-leverage next action."

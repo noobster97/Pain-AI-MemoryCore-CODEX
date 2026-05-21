@@ -221,11 +221,13 @@ mkdir -p "${CODEX_HOME:-$HOME/.codex}/skills"
 cp -R codex-skills/* "${CODEX_HOME:-$HOME/.codex}/skills/"
 ```
 
+Pain's Codex skill bundle includes memory loading, memory saving, work planning, auto-commit, decision logging, self-improvement, observation, post-mortems, session briefing, and companion-style behavior.
+
 ## 📚 **Communication Protocols**
 
 ### **Basic Commands**
 ```
-[AI_NAME]     → Load AI personality and memory
+Pain          → Load AI personality and memory
 save          → Save current progress to files
 update memory → Refresh AI's learning
 review growth → Check AI's development

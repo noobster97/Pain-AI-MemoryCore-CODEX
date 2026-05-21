@@ -1,0 +1,4 @@
+interface:
+  display_name: "Post-Mortem System"
+  short_description: "Turn failures into prevention"
+  default_prompt: "Use $post-mortem-system to log what went wrong and define a prevention action."

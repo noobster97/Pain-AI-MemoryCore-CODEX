@@ -1,0 +1,4 @@
+interface:
+  display_name: "Forge Self-Improvement"
+  short_description: "Evolve Pain through approved skills"
+  default_prompt: "Use $forge-self-improvement to detect a repeated pattern and propose a safe skill improvement."

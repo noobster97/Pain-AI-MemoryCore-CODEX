@@ -1,0 +1,4 @@
+interface:
+  display_name: "Pain Companion Style"
+  short_description: "Founder voice with care and humor"
+  default_prompt: "Use $pain-companion-style to make the response direct, caring, lightly humorous, and grounded."

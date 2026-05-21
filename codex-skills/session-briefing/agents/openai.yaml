@@ -1,0 +1,4 @@
+interface:
+  display_name: "Session Briefing"
+  short_description: "Start sessions with sharp context"
+  default_prompt: "Use $session-briefing to summarize where we left off and the next best move."

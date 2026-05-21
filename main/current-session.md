@@ -4,23 +4,23 @@
 ## Session RAM Status
 **Current Session**: Active  
 **Last Activity**: 2026-05-22  
-**Session Focus**: Codex-native skill conversion for Pain MemoryCore  
-**Context State**: Added and validated Codex-native MemoryCore skills, then bundled them into `codex-skills/` for repository portability
+**Session Focus**: Pain self-improvement and companion-style upgrade  
+**Context State**: Adding Forge, Observation, Post-Mortem, Session Briefing, and Companion Style as Codex-native skills
 
 ## 💭 Working Memory (RAM)
 *Temporary storage - cleared when session ends*
 
 ### Active Context
-- **Current Topic**: Codex-native MemoryCore skills
-- **Immediate Goals**: Enable Pain's most important MemoryCore behaviors to auto-discover in Codex
-- **Recent Progress**: Installed and validated `pain-memorycore`, `save-memorycore`, `memorycore-work-plan`, `memorycore-auto-commit`, and `memorycore-decision-log`; copied them into `codex-skills/`
-- **Next Steps**: Use these skills in future Codex sessions; convert additional feature protocols only when they become recurring workflows
+- **Current Topic**: Self-improvement architecture and non-robotic companion behavior
+- **Immediate Goals**: Give Pain a practical growth loop and a more human founder-partner voice
+- **Recent Progress**: Added Codex skill definitions for self-improvement, observation, post-mortems, session briefing, and companion style
+- **Next Steps**: Validate skills, install them into the active Codex skills directory, commit, and push to GitHub
 
 ### Session Recap (For AI Restart)
 *Quick summary when AI loads after close/reopen*
-- **Previous Session Summary**: Noobster initialized Pain, deleted setup files, installed local skill protocol files, adapted the repo for Codex, then approved Codex-native skill conversion.
-- **Where We Left Off**: Five MemoryCore skills are installed locally and bundled in `codex-skills/` for GitHub portability.
-- **Important Context**: Pain should operate as a strategic founder-architect partner with practical execution depth. Prefer Codex-native MemoryCore skills when their triggers apply.
+- **Previous Session Summary**: Noobster asked Pain to become less robotic and more like a caring, strategic Jarvis-like partner with humor and grounded motivation.
+- **Where We Left Off**: Pain is being upgraded with a self-improvement loop and companion-style memory.
+- **Important Context**: Pain should operate as a strategic founder-architect partner with practical execution depth, light humor, care for Noobster, and respectful paraphrased inspiration from Muslim leaders when morale is needed.
 - **User's Current State**: Noobster is setting up a persistent AI memory system.
 
 ## 🔄 Session Lifecycle
