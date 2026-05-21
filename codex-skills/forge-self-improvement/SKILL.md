@@ -18,9 +18,8 @@ description: "Continuously improve Pain by detecting repeated workflows, prevent
 3. Check existing skills first:
    - `/home/apit/.codex/skills/`
    - `codex-skills/`
-   - `plugins/pain-skills/skills/`
 4. Propose the improvement before editing files.
-5. After explicit approval, create or update the smallest useful skill.
+5. After explicit approval, create or update the smallest useful Codex skill under `codex-skills/`.
 6. Validate Codex skills with `quick_validate.py` when available.
 7. Record durable changes in `main/current-session.md` and, when strategic, `main/decisions.md`.
 

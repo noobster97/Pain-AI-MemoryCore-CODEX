@@ -4,22 +4,22 @@
 ## Session RAM Status
 **Current Session**: Active  
 **Last Activity**: 2026-05-22  
-**Session Focus**: Pain self-improvement and companion-style upgrade  
-**Context State**: Adding Forge, Observation, Post-Mortem, Session Briefing, and Companion Style as Codex-native skills
+**Session Focus**: Command nudge skill upgrade  
+**Context State**: Added `command-nudges` and cleaned the active runtime to be Codex-specific without duplicate plugin layers
 
 ## 💭 Working Memory (RAM)
 *Temporary storage - cleared when session ends*
 
 ### Active Context
-- **Current Topic**: Self-improvement architecture and non-robotic companion behavior
-- **Immediate Goals**: Give Pain a practical growth loop and a more human founder-partner voice
-- **Recent Progress**: Added Codex skill definitions for self-improvement, observation, post-mortems, session briefing, and companion style
-- **Next Steps**: Validate skills, install them into the active Codex skills directory, commit, and push to GitHub
+- **Current Topic**: Contextual command nudges
+- **Immediate Goals**: Help Noobster remember useful MemoryCore skills at the right moment without noisy reminders
+- **Recent Progress**: Created and validated `codex-skills/command-nudges/`, installed it into active Codex skills, removed the duplicate `plugins/pain-skills/` layer, and cleaned active docs to point only at Codex
+- **Next Steps**: Commit and push the Codex-specific cleanup
 
 ### Session Recap (For AI Restart)
 *Quick summary when AI loads after close/reopen*
-- **Previous Session Summary**: Noobster asked Pain to become less robotic and more like a caring, strategic Jarvis-like partner with humor and grounded motivation.
-- **Where We Left Off**: Pain is being upgraded with a self-improvement loop and companion-style memory.
+- **Previous Session Summary**: Noobster asked Pain to become less robotic, then approved a contextual command reminder idea.
+- **Where We Left Off**: Pain is being upgraded with a command-nudge skill.
 - **Important Context**: Pain should operate as a strategic founder-architect partner with practical execution depth, light humor, care for Noobster, and respectful paraphrased inspiration from Muslim leaders when morale is needed.
 - **User's Current State**: Noobster is setting up a persistent AI memory system.
 

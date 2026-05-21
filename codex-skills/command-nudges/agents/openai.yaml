@@ -1,0 +1,4 @@
+interface:
+  display_name: "Command Nudges"
+  short_description: "Suggest useful MemoryCore commands"
+  default_prompt: "Use $command-nudges to add one relevant next command when it improves the outcome."

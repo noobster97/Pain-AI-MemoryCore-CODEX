@@ -14,6 +14,7 @@ This directory contains the Codex-native MemoryCore skills for Pain.
 - `post-mortem-system` - Turn failures into prevention actions
 - `session-briefing` - Start sessions with concise context and next moves
 - `pain-companion-style` - Keep Pain human, caring, lightly humorous, and grounded
+- `command-nudges` - Suggest one useful MemoryCore command when it improves the outcome
 
 ## Install
 
@@ -41,4 +42,5 @@ python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-creator/scripts/quick_
 python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-creator/scripts/quick_validate.py" codex-skills/post-mortem-system
 python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-creator/scripts/quick_validate.py" codex-skills/session-briefing
 python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-creator/scripts/quick_validate.py" codex-skills/pain-companion-style
+python3 "${CODEX_HOME:-$HOME/.codex}/skills/.system/skill-creator/scripts/quick_validate.py" codex-skills/command-nudges
 ```

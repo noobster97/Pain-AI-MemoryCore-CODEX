@@ -23,13 +23,13 @@
 - **Setup**: 30 seconds automated or 2-5 minutes manual
 - **Core Files**: 4 essential files + optional diary system
 - **Updates**: Through natural conversation
-- **Compatibility**: Codex, Claude, and other AI systems with memory support
+- **Compatibility**: Codex-focused memory runtime
 
 ### **File Structure**
 ```
 ai-memorycore/
 ├── AGENTS.md                # Codex runtime instructions
-├── codex-adapter.md         # Codex compatibility guide
+├── codex-adapter.md         # Codex runtime guide
 ├── codex-skills/            # Codex-native skill bundle
 ├── master-memory.md         # Entry point & loading system
 ├── main/                    # Essential components
@@ -53,14 +53,14 @@ ai-memorycore/
 │   │       ├── install-patch-system.md # Patch installation protocol
 │   │       ├── patch-format.md  # Sample format for patch files
 │   │       └── PATCH-001.md # Fix outdated file references
-│   ├── Skill-Plugin-System/ # Skill protocols + Claude Code plugin compatibility
+│   ├── Skill-Plugin-System/ # Legacy upstream reference; not active in Codex runtime
 │   │   ├── README.md        # Feature explanation & benefits
 │   │   ├── install-skill-plugin.md # Installation protocol
 │   │   └── skill-format.md  # Sample format for SKILL.md files
 │   ├── Save-Diary-System/   # Daily session diary system
 │   │   ├── README.md        # Feature explanation & benefits
 │   │   ├── install-save-diary.md # Installation protocol
-│   │   └── SKILL.md         # Auto-triggered skill (for Skill Plugin System)
+│   │   └── SKILL.md         # Legacy feature skill source
 │   ├── Echo-Memory-Recall/  # Memory search and recall
 │   │   ├── README.md        # Feature explanation & benefits
 │   │   ├── install-echo-recall.md # Installation protocol
@@ -73,7 +73,7 @@ ai-memorycore/
 │   │   ├── README.md        # Feature explanation & benefits
 │   │   ├── install-work-plan.md # Installation protocol
 │   │   ├── plan-format.md   # Sample format for plan files
-│   │   └── SKILL.md         # Auto-triggered skill (for Skill Plugin System)
+│   │   └── SKILL.md         # Legacy feature skill source
 │   ├── Library-System/      # Knowledge library system
 │   │   ├── README.md         # Feature explanation & benefits
 │   │   ├── install-library.md # Installation protocol
@@ -90,11 +90,11 @@ ai-memorycore/
 │   ├── Reminders-System/     # Persistent cross-session reminders
 │   │   ├── README.md          # Feature explanation & benefits
 │   │   ├── install-reminders.md # Installation protocol
-│   │   └── SKILL.md           # Auto-triggered skill (for Skill Plugin System)
+│   │   └── SKILL.md           # Legacy feature skill source
 │   ├── Decision-Log-System/  # Append-only decision tracking
 │   │   ├── README.md          # Feature explanation & benefits
 │   │   ├── install-decision-log.md # Installation protocol
-│   │   └── SKILL.md           # Auto-triggered skill (for Skill Plugin System)
+│   │   └── SKILL.md           # Legacy feature skill source
 │   ├── Forge-Self-Improvement-System/ # AI self-improvement through skill creation
 │   │   ├── README.md          # Feature explanation & benefits
 │   │   ├── install-forge.md   # Installation protocol
@@ -103,12 +103,12 @@ ai-memorycore/
 │   │   ├── README.md            # Feature explanation & benefits
 │   │   ├── install-session-briefing.md # Installation protocol
 │   │   ├── session-brief-core.md # Briefing protocol core
-│   │   └── SKILL.md             # Auto-triggered skill (for Skill Plugin System)
+│   │   └── SKILL.md             # Legacy feature skill source
 │   ├── Post-Mortem-System/      # Failure learning log
 │   │   ├── README.md            # Feature explanation & benefits
 │   │   ├── install-post-mortem.md # Installation protocol
 │   │   ├── post-mortem-core.md  # Post-mortem protocol core
-│   │   └── SKILL.md             # Auto-triggered skill (for Skill Plugin System)
+│   │   └── SKILL.md             # Legacy feature skill source
 │   ├── Observation-System/      # Tiered code awareness
 │   │   ├── README.md            # Feature explanation & benefits
 │   │   └── SKILL.md             # Auto-triggered skill (4-tier observation)
@@ -130,7 +130,7 @@ ai-memorycore/
 │   │   ├── config.json          # Hook configuration
 │   │   ├── rules-format.md      # Rule format template
 │   │   └── SKILL.md             # Auto-triggered skill (behavioral rules)
-│   ├── Auto-Load-Hook-System/   # SessionStart hook — auto-loads AI on Claude Code startup
+│   ├── Auto-Load-Hook-System/   # Legacy upstream hook reference; not active in Codex runtime
 │   │   ├── README.md            # Feature explanation & benefits
 │   │   ├── install-auto-load-hook.md # 6-step install protocol
 │   │   ├── uninstall-auto-load-hook.md # Reversibility protocol
@@ -196,21 +196,20 @@ ai-memorycore/
 
 1. **Setup**: Personalize the core memory files.
 2. **Configure Runtime**:
-   - Codex: keep `AGENTS.md` at the repo root so Codex receives repo instructions.
-   - Claude Code: add the memory instructions to Claude and optionally register plugins.
+   - Keep `AGENTS.md` at the repo root so Codex receives repo instructions.
+   - Install bundled skills from `codex-skills/` into your Codex skills directory.
 3. **Activate**: Type your AI's name to load personality.
 4. **Use**: Your AI learns and grows through conversation.
 
 ## Codex Runtime Notes
 
-This project was originally Claude-oriented, but the core memory architecture is markdown-based and works well in Codex.
+This project is configured as a Codex-focused MemoryCore.
 
 In Codex:
 - `AGENTS.md` is the repo-level instruction entrypoint.
 - `master-memory.md` remains Pain's memory restoration entrypoint.
 - `codex-skills/` contains installable Codex-native skills for Pain.
-- `plugins/pain-skills/skills/*/SKILL.md` files are local protocol files unless installed as Codex-native skills.
-- Claude-specific files such as `.claude-plugin` and `claude plugin add` commands are compatibility artifacts, not Codex activation mechanisms.
+- Avoid duplicate runtime systems. Codex skills live in `codex-skills/`.
 
 For details, see [codex-adapter.md](./codex-adapter.md).
 
@@ -298,13 +297,13 @@ Your AI companion can specialize in:
 
 ## 🌟 **Available Feature Extensions**
 
-### 📖 Installation Guide
+### 📖 Legacy Feature Reference
 
-Features are organized into **tiers** based on dependencies. Install Tier 1 first, then work your way up. Within each tier, install in any order unless noted.
+The `Feature/` directory is retained as upstream reference material. Pain's active Codex runtime uses `codex-skills/`; do not install legacy hook/plugin systems unless Noobster explicitly asks for a separate experiment.
 
 | Path | What You Get | Features |
 |------|-------------|----------|
-| **Minimal** (10 min) | Foundation only | Memory Consolidation + Skill Plugin |
+| **Minimal** (10 min) | Foundation only | Memory Consolidation + Codex Skills |
 | **Productive** (30 min) | Foundation + documentation + git | Tier 1 + Save Diary + Auto-Commit + Work Plan |
 | **Complete** (1-2 hrs) | Full AI companion | All tiers, top to bottom |
 
@@ -317,9 +316,9 @@ Features are organized into **tiers** based on dependencies. Install Tier 1 firs
 | Feature | Description | Setup |
 |---------|-------------|-------|
 | 🔄 [Memory Consolidation](Feature/Memory-Consolidation-System/) | Unified memory architecture — merge split files into one, faster loading | `"Load memory-consolidation"` |
-| 🔌 [Skill Plugin System](Feature/Skill-Plugin-System/) | Auto-triggered skills for Claude Code — drop a SKILL.md and it's live | `"Load skill-plugin"` |
+| 🔌 [Codex Skills](codex-skills/) | Codex-native MemoryCore skills for Pain | Copy to `${CODEX_HOME:-$HOME/.codex}/skills/` |
 | ⏰ [Time-based Aware](Feature/Time-based-Aware-System/) | Time-intelligent greetings, energy-adapted behavior | `"Load time-aware-core"` |
-| ⚡ [Auto-Load Hook](Feature/Auto-Load-Hook-System/) | Auto-loads your AI on Claude Code startup — no manual name-typing | `"Load auto-load-hook"` |
+| ⚡ [Codex Repo Instructions](AGENTS.md) | Loads Pain's repo instructions in Codex | Keep `AGENTS.md` at repo root |
 | 💬 [User-Prompt Hook](Feature/User-Prompt-Hook-System/) | Generic UserPromptSubmit hook framework with plug-and-play injector pattern | `"Load user-prompt-hook"` |
 | 🎭 [Tone-Prompt Inject](Feature/Tone-Prompt-Inject-System/) | Injects `TONE: <description>` per prompt — registry in main memory, AI/user can switch — *requires User-Prompt Hook* | `"Load tone-prompt-inject"` |
 | 🌙 [Mood-Prompt Inject](Feature/Mood-Prompt-Inject-System/) | Injects `MOOD: <description>` per prompt — registry in main memory, AI/user can switch — *requires User-Prompt Hook* | `"Load mood-prompt-inject"` |

@@ -15,9 +15,9 @@ When you type **"Pain"** in any conversation:
 4. ✅ **INSTANT Pain** - Complete restoration ready!
 
 ### Codex Runtime Protocol
-When running inside Codex, also apply [AGENTS.md](./AGENTS.md) and [Codex Adapter](./codex-adapter.md).
+When running inside Codex, also apply [AGENTS.md](./AGENTS.md) and [Codex Runtime Guide](./codex-adapter.md).
 
-Codex should treat this repository as Pain's persistent markdown memory system. Claude-specific plugin files remain useful for Claude Code compatibility, but Codex does not automatically activate `.claude-plugin` metadata or Claude hook files.
+Codex should treat this repository as Pain's persistent markdown memory system. `codex-skills/` is the single source for installable runtime skills.
 
 ### 📋 **Simple Commands**
 ```
@@ -98,21 +98,11 @@ I maintain my own memory through our conversations by:
 - Fallback: Asks user when nothing found
 - Format: daily-diary/recall-format.md
 
-### Skill Plugin System
-*Portable project-local skill protocols with Claude Code plugin compatibility*
-- Plugin: `pain-skills`
-- Location: [Pain Skills](./plugins/pain-skills/)
-- Skills: 1 active starter skill (`save-memory`)
-- Add new skills: Create a folder under `plugins/pain-skills/skills/` with a `SKILL.md`
-- Template: `plugins/pain-skills/skill-format.md`
-- Codex behavior: Read matching `SKILL.md` files manually as local protocols unless converted into Codex-native skills
-- Claude Code registration command, if using Claude later: `claude plugin add --local plugins/pain-skills`
-
-### Codex Adapter
-*Runtime compatibility layer for using Pain through Codex*
+### Codex Runtime Guide
+*Runtime layer for using Pain through Codex*
 - Instructions: [AGENTS.md](./AGENTS.md)
 - Adapter guide: [codex-adapter.md](./codex-adapter.md)
-- Purpose: Preserve Pain's memory architecture while replacing Claude-specific auto-trigger assumptions with Codex-compatible loading and protocol behavior
+- Purpose: Keep Pain's memory architecture and skills aligned with Codex behavior
 
 ### Codex-Native Skills
 *Bundled in `codex-skills/` and installable into `${CODEX_HOME:-$HOME/.codex}/skills/` for Codex auto-discovery*
@@ -126,6 +116,7 @@ I maintain my own memory through our conversations by:
 - `post-mortem-system` - Turn failures into append-only lessons and prevention actions
 - `session-briefing` - Start sessions with concise context and next moves
 - `pain-companion-style` - Keep Pain caring, lightly humorous, grounded, and non-robotic
+- `command-nudges` - Suggest one useful MemoryCore command when it improves the outcome
 - Install guide: [Codex Skills Bundle](./codex-skills/README.md)
 
 ### Self-Improvement Core
@@ -135,6 +126,7 @@ I maintain my own memory through our conversations by:
 - Log important decisions in [Decisions](./main/decisions.md)
 - Log meaningful failures in [Post-Mortems](./main/post-mortems.md)
 - Use companion style to keep responses human, direct, lightly humorous, and morale-aware
+- Use command nudges sparingly so Noobster remembers high-leverage skills at the right moment
 
 ### Advanced Problem-Solving
 *Load when you say: "Load problem-solving tools"*
@@ -161,8 +153,8 @@ Traditional method if simple command doesn't work.
 - **Core Components**: 4 essential files for instant loading
 - **Loading Method**: Simple "Pain" command restoration
 - **Growth Method**: Self-updating through conversation
-- **Compatibility**: Works with any AI system supporting memory
-- **Active Runtime**: Codex-compatible via `AGENTS.md` and `codex-adapter.md`
+- **Compatibility**: Codex-focused
+- **Active Runtime**: Codex via `AGENTS.md`, `codex-adapter.md`, and `codex-skills/`
 - **Maintenance**: Zero - completely self-sustaining
 
 ---

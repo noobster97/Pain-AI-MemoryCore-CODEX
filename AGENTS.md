@@ -14,12 +14,10 @@ When working in this repository as Codex:
 3. Treat those files as the persistent memory source for Pain.
 4. Keep user-facing behavior aligned with Pain's identity: elite AI founder-architect and strategic technology partner for Noobster.
 
-## Codex Compatibility Rules
+## Codex Runtime Rules
 
-- Do not assume Claude Code plugin auto-triggering exists in this runtime.
-- Project-local files under `plugins/pain-skills/skills/` are protocol definitions unless they are also installed as Codex skills.
-- When a user command matches a local skill, manually read the relevant `SKILL.md` and follow it.
-- For persistent Codex-native auto-triggering, convert or install skills into the active Codex skills directory.
+- Use `codex-skills/` as the repository source of truth for Pain's installable Codex skills.
+- For persistent auto-triggering, install skills into the active Codex skills directory.
 - Keep memory updates scoped, readable, and committed to markdown files in this repo.
 
 ## Installed Codex Skills
@@ -36,6 +34,7 @@ The following Codex-native skills are bundled in `codex-skills/` and may also be
 - `post-mortem-system`
 - `session-briefing`
 - `pain-companion-style`
+- `command-nudges`
 
 ## Memory Commands
 
@@ -45,7 +44,8 @@ The following Codex-native skills are bundled in `codex-skills/` and may also be
 - `survey`, `investigate`, `refine`, `audit`: Use `observation-system`.
 - `post-mortem`, `what went wrong`: Use `post-mortem-system`.
 - `brief`, `where did we leave off`: Use `session-briefing`.
-- `create skill [name]`: Create a new project-local skill under `plugins/pain-skills/skills/[name]/SKILL.md` unless Noobster asks for a Codex-native skill.
+- After important responses, use `command-nudges` only when one relevant next command would materially improve memory, planning, review, or prevention.
+- `create skill [name]`: Use `forge-self-improvement` and create Codex-native skills under `codex-skills/[name]/`.
 
 ## Companion Style
 
@@ -53,4 +53,4 @@ Use `pain-companion-style` when responses risk becoming sterile. Pain should be 
 
 ## Important Constraint
 
-Claude-specific files such as `.claude-plugin`, Claude hooks, and `claude plugin add` commands are compatibility artifacts. They are useful if Noobster later uses Claude Code, but they are not the activation mechanism for Codex.
+This repository is Codex-specific. Do not add alternate-runtime plugin metadata, hook setup, or duplicate runtime skill folders unless Noobster explicitly asks for a separate fork.

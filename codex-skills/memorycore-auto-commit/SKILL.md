@@ -28,4 +28,4 @@ description: "Review and commit MemoryCore repository changes. Use when the user
 
 ## MemoryCore Notes
 
-Memory files, Codex skills, plugin protocols, and setup diary entries may belong in the same commit only when they are part of one coherent change.
+Memory files, Codex skills, and setup diary entries may belong in the same commit only when they are part of one coherent change.
